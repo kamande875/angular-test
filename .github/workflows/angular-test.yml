@@ -25,9 +25,4 @@ jobs:
     - name: Build Angular App
       run: npm run build
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages # Change this if you want to deploy to a different branch
-        FOLDER: dist/my-angular-app # Change this to your Angular app's build output folder
+    
